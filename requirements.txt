@@ -1,0 +1,2 @@
+-e git+git@github.com:bearstech/nuka.git#egg=nuka[full]
+impress

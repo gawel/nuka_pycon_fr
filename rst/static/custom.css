@@ -1,0 +1,12 @@
+body { color: #0d3044; background-color: #0d3044 }
+#nuka p { text-align: center; }
+#nuka img { margin-top: 2em }
+#le-choix p,
+#la-douleur p,
+#le-bricolage p,
+#you-see-the-light p,
+#none p
+  { font-size: 50%; text-align: center }
+#le-bricolage img { width: 70%; height: 70% }
+
+li { margin-top: 2em }
