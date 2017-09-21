@@ -152,12 +152,27 @@ Use it
 
 .. literalinclude:: ../do_tasks.py
 
+Perfs
+=====
+
+::
+
+    % ./list_hosts | ./bench_asyncssh -q -d .01
+
+    Got 296 valid results for 296 hosts in 15.19s
+
+                     min       max       avg     count
+    connect     0.000009  0.000057  0.000012       296
+    auth_time   0.185978  9.049197  7.170807       296
+    timeouts    0.000000  0.000000  0.000000       296
+
 Known issues
 ============
 
 - support debian. autres distro incertaines
 
-- timeout sur un grand nombre de connections (> 150) en fonction du CPU/Net
+- flood de ssh-agent. timeout sur un grand nombre de connections (> 150) en
+  fonction du CPU/Net
 
 - docker + systemd
 
