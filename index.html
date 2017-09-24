@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Nuka</title>
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/impress.css" type="text/css" />
+    <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  </head>
+  <body>
+    <div id="impress">
+      
+  <div class="step first slide section" id="nuka">
+<h1>Nuka<a class="headerlink" href="#nuka" title="Permalink to this headline">¶</a></h1>
+<p>Libérez le devops qui est en vous</p>
+<div align="center" class="align-center"><img alt="images/pycon.svg" src="images/pycon.svg" /></div>
+</div>
+<div class="step slide section" data-x="1000" id="a-propos">
+<h1>A propos<a class="headerlink" href="#a-propos" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Je suis Gael « <a class="reference external" href="https://twitter.com/gawel_">&#64;gawel_</a> » Pasgrimaud</li>
+<li>Je geek <a class="reference external" href="https://twitter.com/bearstech_">&#64;bearstech</a></li>
+</ul>
+</div>
+<div class="step bigs slide section" data-x="2000" id="histoire">
+<h1>Histoire<a class="headerlink" href="#histoire" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Hébergement et Infogérance libres depuis 2004</li>
+<li>script à la papa; svn...</li>
+<li>pussh <a class="reference external" href="https://github.com/bearstech/pussh">https://github.com/bearstech/pussh</a></li>
+<li>choix d&#8217;outil de déploiement</li>
+</ul>
+</div>
+<div class="step bigs slide section" data-x="3000" id="existant">
+<h1>Existant<a class="headerlink" href="#existant" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>puppet</li>
+<li>chef</li>
+<li>salt</li>
+<li>ansible</li>
+<li>fabric</li>
+</ul>
+</div>
+<div class="step slide section" data-x="4000" id="le-choix">
+<h1>Le choix<a class="headerlink" href="#le-choix" title="Permalink to this headline">¶</a></h1>
+<img alt="images/choice.jpg" class="align-center" src="images/choice.jpg" />
+<p>Photo by <a class="reference external" href="https://www.flickr.com/photos/marfis75/8031936764">Martin Fisch</a>, CC via Flickr</p>
+</div>
+<div class="step slide section" data-x="5000" id="la-douleur">
+<h1>La douleur<a class="headerlink" href="#la-douleur" title="Permalink to this headline">¶</a></h1>
+<img alt="images/pain.jpg" class="align-center" src="images/pain.jpg" />
+<p>Photo by <a class="reference external" href="https://www.flickr.com/photos/thomashawk/6247423737/">Thomas Hawk</a>, CC via Flickr</p>
+</div>
+<div class="step slide section" data-x="6000" id="le-bricolage">
+<h1>Le bricolage<a class="headerlink" href="#le-bricolage" title="Permalink to this headline">¶</a></h1>
+<img alt="images/repair.jpg" class="align-center" src="images/repair.jpg" />
+<p>Photo by <a class="reference external" href="https://flic.kr/p/foN1Ku">(Mick Baker)rooster</a>, CC via Flickr</p>
+</div>
+<div class="step slide section" data-x="7000" id="you-see-the-light">
+<h1>You see the light<a class="headerlink" href="#you-see-the-light" title="Permalink to this headline">¶</a></h1>
+<img alt="images/light.jpg" class="align-center" src="images/light.jpg" />
+<p>Photo by <a class="reference external" href="https://flic.kr/p/5JcGgf">Stuart Williams</a>, CC via Flickr</p>
+</div>
+<div class="step slide section" data-x="8000" id="diy">
+<h1>DIY!<a class="headerlink" href="#diy" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>python3</li>
+<li>asyncio</li>
+<li>ssh-agent &amp;&amp; ssh</li>
+</ul>
+</div>
+<div class="step slide section" data-x="9000" id="poc">
+<h1>POC<a class="headerlink" href="#poc" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>bas niveau (code) mais pas trop</li>
+<li>extensible</li>
+<li>builtin graphs</li>
+<li>testé</li>
+<li>300 lignes de code</li>
+</ul>
+</div>
+<div class="step slide section" data-x="10000" id="how-it-works-1-2">
+<h1>How it works (1/2)<a class="headerlink" href="#how-it-works-1-2" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Host</li>
+<li>Task</li>
+<li>coroutines</li>
+</ul>
+</div>
+<div class="step slide section" data-x="11000" id="id1">
+<h1>How it works (1/2)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>setup: upload de base de code et récupération d&#8217;inventaire</li>
+<li>run</li>
+<li>teardown: nétoyage, rendu de graphs</li>
+</ul>
+</div>
+<div class="step slide section" data-x="12000" id="hosts">
+<h1>Hosts<a class="headerlink" href="#hosts" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Host</li>
+<li>DockerContainer</li>
+<li>cloud (libcloud / openstack)</li>
+</ul>
+</div>
+<div class="step slide section" data-x="13000" id="a-task">
+<h1>A task<a class="headerlink" href="#a-task" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">from</span> <span class="nn">nuka.task</span> <span class="k">import</span> <span class="n">Task</span>
+
+
+<span class="k">class</span> <span class="nc">mytask</span><span class="p">(</span><span class="n">Task</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">do</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sh</span><span class="p">([</span><span class="s1">&#39;ls&#39;</span><span class="p">,</span> <span class="s1">&#39;/var&#39;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">changed</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">diff</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sh</span><span class="p">([</span><span class="s1">&#39;ls&#39;</span><span class="p">,</span> <span class="s1">&#39;/var&#39;</span><span class="p">])</span>
+        <span class="n">diff</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">texts_diff</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;stdout&#39;</span><span class="p">])</span>
+        <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">diff</span><span class="o">=</span><span class="n">diff</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="step slide section" data-x="14000" id="task">
+<h1>Task<a class="headerlink" href="#task" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>inspection de la stack</li>
+<li>class locale != class distante</li>
+<li>appels shell</li>
+<li>héritage possible</li>
+<li>une tache == une session</li>
+</ul>
+</div>
+<div class="step slide section" data-x="15000" id="use-it-1-2">
+<h1>Use it (1/2)<a class="headerlink" href="#use-it-1-2" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="ch">#!bin/python</span>
+<span class="kn">import</span> <span class="nn">nuka</span>
+<span class="kn">from</span> <span class="nn">nuka.hosts</span> <span class="k">import</span> <span class="n">DockerContainer</span>
+
+<span class="kn">from</span> <span class="nn">tasks</span> <span class="k">import</span> <span class="n">mytask</span>
+
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">do_tasks</span><span class="p">(</span><span class="n">host</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="k">await</span> <span class="n">mytask</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+
+<span class="n">nuka</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">do_tasks</span><span class="p">(</span><span class="n">DockerContainer</span><span class="p">(</span><span class="s1">&#39;pyconfr&#39;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="step slide section" data-x="16000" id="id2">
+<h1>Use it (1/2)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install nuka
+$ pip install nuka[full]
+$ pip install \
+  -e git+git@github.com:bearstech/nuka.git#egg=nuka[full]
+
+$ python do_task.py -h
+</pre></div>
+</div>
+</div>
+<div class="step slide section" data-x="17000" id="gantt">
+<h1>Gantt<a class="headerlink" href="#gantt" title="Permalink to this headline">¶</a></h1>
+<img alt="images/gantt.png" class="align-center" src="images/gantt.png" />
+</div>
+<div class="step slide section" data-x="18000" id="use-cases">
+<h1>Use cases<a class="headerlink" href="#use-cases" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Déploiement initial</li>
+<li>Détection de paquet à mettre à jour (~300 machines)</li>
+</ul>
+</div>
+<div class="step slide section" data-x="19000" id="pourquoi-c-est-lent">
+<h1>Pourquoi c&#8217;est lent ?<a class="headerlink" href="#pourquoi-c-est-lent" title="Permalink to this headline">¶</a></h1>
+<img alt="images/why.jpg" class="align-center" src="images/why.jpg" />
+<p>Photo by <a class="reference external" href="https://flic.kr/p/5JcGgf">Tintin44</a>, CC via Flickr</p>
+</div>
+<div class="step slide section" data-x="20000" id="perfs">
+<h1>Perfs<a class="headerlink" href="#perfs" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="o">./</span><span class="n">list_hosts</span> <span class="o">|</span> <span class="o">./</span><span class="n">benches</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">q</span> <span class="o">-</span><span class="n">d</span> <span class="o">.</span><span class="mi">01</span>
+
+<span class="n">Got</span> <span class="mi">296</span> <span class="n">valid</span> <span class="n">results</span> <span class="k">for</span> <span class="mi">296</span> <span class="n">hosts</span> <span class="ow">in</span> <span class="mf">15.19</span><span class="n">s</span>
+
+                 <span class="nb">min</span>       <span class="nb">max</span>       <span class="n">avg</span>     <span class="n">count</span>
+<span class="n">connect</span>     <span class="mf">0.000009</span>  <span class="mf">0.000057</span>  <span class="mf">0.000012</span>       <span class="mi">296</span>
+<span class="n">auth_time</span>   <span class="mf">0.185978</span>  <span class="mf">9.049197</span>  <span class="mf">7.170807</span>       <span class="mi">296</span>
+<span class="n">timeouts</span>    <span class="mf">0.000000</span>  <span class="mf">0.000000</span>  <span class="mf">0.000000</span>       <span class="mi">296</span>
+</pre></div>
+</div>
+</div>
+<div class="step slide section" data-x="21000" id="status">
+<h1>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>taches de bases (apt, file, shell, user)</li>
+<li>support gpg</li>
+</ul>
+</div>
+<div class="step slide section" data-x="22000" id="known-issues">
+<h1>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>support debian. autres distro incertaines</li>
+<li>flood de ssh-agent. timeout sur un grand nombre de connections (&gt; 150) en
+fonction du CPU/Net</li>
+<li>docker + systemd</li>
+</ul>
+</div>
+<div class="step slide section" data-x="23000" id="links">
+<h1>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference external" href="https://pypi.python.org/pypi/nuka">https://pypi.python.org/pypi/nuka</a></li>
+<li><a class="reference external" href="https://doc.bearstech.com/nuka/">https://doc.bearstech.com/nuka/</a></li>
+</ul>
+</div>
+
+
+    </div>
+    <script src="static/impressjs/js/impress.js"></script>
+    <script src="static/jquery.js"></script>
+    <script src="static/impress.js"></script>
+    <script src="static/custom.js"></script>
+    <script>
+      if (! /_modules/.exec(window.location.href)) {
+        impress().init();
+      }
+    </script>
+  </body>
+</html>
