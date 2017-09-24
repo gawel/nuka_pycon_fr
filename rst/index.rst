@@ -48,6 +48,8 @@ Existant
 
 - ansible
 
+- fabric
+
 Le choix
 ========
 
@@ -91,12 +93,12 @@ DIY!
 
 - asyncio
 
-- ssh-agent && [ssh|asyncssh]
+- ssh-agent && ssh
 
 POC
 ======
 
-- bas niveau (code)
+- bas niveau (code) mais pas trop
 
 - extensible
 
@@ -104,7 +106,7 @@ POC
 
 - testé
 
-- 5k lignes de code (- 1.5k de taches courantes)
+- 300 lignes de code
 
 
 How it works (1/2)
@@ -112,7 +114,7 @@ How it works (1/2)
 
 - Host
 
-- Tasks
+- Task
 
 - coroutines
 
@@ -134,30 +136,70 @@ Hosts
 
 - cloud (libcloud / openstack)
 
-Task
-=====
-
-- trick: class locale != class distante
-
-- appels shell
-
 A task
 =======
 
 .. literalinclude:: ../tasks/__init__.py
 
+Task
+=====
 
-Use it
-======
+- inspection de la stack
+
+- class locale != class distante
+
+- appels shell
+
+- héritage possible
+
+- une tache == une session
+
+
+Use it (1/2)
+============
 
 .. literalinclude:: ../do_tasks.py
+
+Use it (1/2)
+============
+
+::
+
+    $ pip install nuka
+    $ pip install nuka[full]
+    $ pip install \
+      -e git+git@github.com:bearstech/nuka.git#egg=nuka[full]
+
+    $ python do_task.py -h
+
+Gantt
+=====
+
+.. image:: ./images/gantt.png
+  :align: center
+
+Use cases
+=========
+
+- Déploiement initial
+
+- Détection de paquet à mettre à jour (~300 machines)
+
+Pourquoi c'est lent ?
+=====================
+
+.. image:: ./images/why.jpg
+  :align: center
+
+Photo by `Tintin44 <https://flic.kr/p/5JcGgf>`_, CC via Flickr
+
 
 Perfs
 =====
 
 ::
 
-    % ./list_hosts | ./bench_asyncssh -q -d .01
+    % ./list_hosts | ./benches.py -q -d .01
 
     Got 296 valid results for 296 hosts in 15.19s
 
@@ -165,6 +207,13 @@ Perfs
     connect     0.000009  0.000057  0.000012       296
     auth_time   0.185978  9.049197  7.170807       296
     timeouts    0.000000  0.000000  0.000000       296
+
+Status
+======
+
+- taches de bases (apt, file, shell, user)
+
+- support gpg
 
 Known issues
 ============
@@ -176,4 +225,9 @@ Known issues
 
 - docker + systemd
 
+Links
+=====
 
+- https://pypi.python.org/pypi/nuka
+
+- https://doc.bearstech.com/nuka/
